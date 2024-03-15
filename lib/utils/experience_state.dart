@@ -5,7 +5,7 @@ class ExperienceState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const title = "Expériences";
+    const title = "Expérience professionnelle";
     const experience1 = "DÉVELOPPEUR MOBILE";
     const experience2 = "DÉVELOPPEUR WEB";
     const service = "- ENTREPRISE";
