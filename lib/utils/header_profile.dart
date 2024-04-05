@@ -16,7 +16,6 @@ class ProfileState extends StatelessWidget {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              // Autres images autour de la photo de profil
               const Positioned(
                 top: 30,
                 left: 10,
@@ -27,18 +26,18 @@ class ProfileState extends StatelessWidget {
               ),
               const Positioned(
                 top: 0,
-                left: 70,
+                left: 77,
                 child: CircleAvatar(
                   backgroundImage: AssetImage('web/images/python.jpg'),
                   radius: 25,
                 ),
               ),
               const Positioned(
-                top: 10,
-                right: 20,
+                top: 0,
+                right: 30,
                 child: CircleAvatar(
                   backgroundImage: AssetImage('web/images/html.jpg'),
-                  radius: 30,
+                  radius: 35,
                 ),
               ),
               const Positioned(
@@ -71,14 +70,13 @@ class ProfileState extends StatelessWidget {
                   radius: 30,
                 ),
               ),
-              // Photo de profil (image centrale)
               Container(
                 margin: const EdgeInsets.only(
                     top: 50,
                     bottom: 50,
                     left: 70,
                     right:
-                        70), // Ajoute une marge de 50 pixels autour de l'image
+                        70),
                 width: 120,
                 height: 120,
                 decoration: const BoxDecoration(
@@ -94,10 +92,13 @@ class ProfileState extends StatelessWidget {
         ),
         const Text(firstName,
             style: TextStyle(
-                letterSpacing: 2,
+                letterSpacing: 5,
                 fontWeight: FontWeight.w900,
                 fontSize: 19,
-                color: Colors.black87)),
+                fontFamily: 'Roboto' ,
+                color: Colors.black87
+            )
+          ),
         const Text(lastName,
             style: TextStyle(
               letterSpacing: 5,

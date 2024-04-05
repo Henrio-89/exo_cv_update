@@ -19,8 +19,8 @@ class ExperienceState extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(10),
             alignment: Alignment.centerLeft,
-            child: Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
             decoration: const BoxDecoration(color: Color.fromARGB(156, 86, 196, 255)),
+            child: const Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
           ),
           Container(
             padding: const EdgeInsets.all(10),
