@@ -14,9 +14,9 @@ class SummaryState extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.all(10),
-            alignment: Alignment.center,
+            alignment: Alignment.centerLeft,
             child: Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
-            decoration: const BoxDecoration(color: Colors.white60),
+            decoration: const BoxDecoration(color: Color.fromARGB(156, 86, 196, 255)),
           ),
           Container(
             padding: const EdgeInsets.all(10),

@@ -14,14 +14,14 @@ class TrainingState extends StatelessWidget {
     const experienceAt3 = "02 Février 2024";
 
     return Padding(
-      padding: const EdgeInsets.all(17),
+      padding: const EdgeInsets.only(left: 17, right: 17),
       child: Column(
         children: [
           Container(
             padding: const EdgeInsets.all(10),
-            alignment: Alignment.center,
-            child: Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
-            decoration: const BoxDecoration(color: Colors.white60),
+            alignment: Alignment.centerLeft,
+            decoration: const BoxDecoration(color: Color.fromARGB(156, 86, 196, 255)),
+            child: const Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
           ),
           Container(
             padding: const EdgeInsets.all(10),

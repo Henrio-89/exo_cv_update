@@ -14,14 +14,14 @@ class SkillState extends StatelessWidget {
     const urlJavascript = "web/images/javascript.jpg";
 
     return Padding(
-      padding: const EdgeInsets.only(left: 17, right: 17),
+      padding: const EdgeInsets.all(17),
       child: Column(
         children: [
           Container(
             padding: const EdgeInsets.all(10),
             alignment: Alignment.center,
-            child: Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
-            decoration: const BoxDecoration(color: Colors.white60),
+            decoration: const BoxDecoration(color: Color.fromARGB(156, 86, 196, 255)),
+            child: const Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
           ),
           Container(
             padding: const EdgeInsets.all(10),

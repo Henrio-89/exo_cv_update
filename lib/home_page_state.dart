@@ -1,5 +1,5 @@
 import 'package:cv/utils/experience_state.dart';
-import 'package:cv/utils/header_state.dart';
+import 'package:cv/utils/header_profile.dart';
 import 'package:cv/utils/skill_state.dart';
 import 'package:cv/utils/training_state.dart';
 import 'package:cv/utils/summary_state.dart';
@@ -10,21 +10,16 @@ class HomePageState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const titleAppbar = "CURRICULUM VITAE";
+    // const titleAppbar = "CURRICULUM VITAE";
     return Scaffold(
-      backgroundColor: Colors.grey[200],
-      appBar: AppBar(
-        backgroundColor: Colors.black87,
-        title: const Text(
-          titleAppbar,
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white70),
-        ),
-      ),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: ListView(
         scrollDirection: Axis.vertical,
-        
         children: const [
-          HeaderState(),
+          SizedBox(height:77 ),
+          ProfileState(),
+          // HeaderState(),
+          SizedBox(height:17 ),
           SummaryState(),
           ExperienceState(),
           TrainingState(),
